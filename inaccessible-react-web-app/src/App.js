@@ -8,6 +8,7 @@ import Orientation from './components/1.3.4Orientation';
 import InputPurpose from './components/1.3.5InputPurpose';
 import IdentifyPurpose from './components/1.3.6IdentifyPurpose';
 import UseOfColor from './components/1.4.1UseOfColor';
+import AudioControl from './components/1.4.2AudioControl';
 
 import {
   BrowserRouter as Router,
@@ -62,7 +63,9 @@ class App extends React.Component {
                 <Link style={linkStyle} to='/orientation'>Lock Orientation</Link><br/>
                 <Link style={linkStyle} to='/inputPurpose'>Incorrect Input Purpose</Link><br/>
                 <Link style={linkStyle} to='/identifyPurpose'>No Purpose on Elements</Link><br/>
-                <Link style={linkStyle} to='/useOfColor'>No Use of Color</Link><br/>              </div>
+                <Link style={linkStyle} to='/useOfColor'>No Use of Color</Link><br/>
+                <Link style={linkStyle} to='/noAudioControl'>No Audio Control</Link><br/>
+              </div>
               <div id='inaccessibleContent' style={inaccessibleContentStyle}>
                 <Switch>
                   <Route path='/imageNoAlt'>
@@ -85,6 +88,9 @@ class App extends React.Component {
                   </Route>
                   <Route path='/useOfColor'>
                     <UseOfColor/>
+                  </Route>
+                  <Route path='/noAudioControl'>
+                    <AudioControl/>
                   </Route>
                 </Switch>
               </div>
