@@ -9,6 +9,8 @@ import InputPurpose from './components/1.3.5InputPurpose';
 import IdentifyPurpose from './components/1.3.6IdentifyPurpose';
 import UseOfColor from './components/1.4.1UseOfColor';
 import AudioControl from './components/1.4.2AudioControl';
+import ContrastMinimum from './components/1.4.3Contrast(Minimum)';
+import ResizeText from './components/1.4.4ResizeText';
 
 import {
   BrowserRouter as Router,
@@ -65,6 +67,8 @@ class App extends React.Component {
                 <Link style={linkStyle} to='/identifyPurpose'>No Purpose on Elements</Link><br/>
                 <Link style={linkStyle} to='/useOfColor'>No Use of Color</Link><br/>
                 <Link style={linkStyle} to='/noAudioControl'>No Audio Control</Link><br/>
+                <Link style={linkStyle} to='/insufficentContrast'>Insufficent Contrast</Link><br/>
+                <Link style={linkStyle} to='/resizeText'>No Resizing Text</Link><br/>
               </div>
               <div id='inaccessibleContent' style={inaccessibleContentStyle}>
                 <Switch>
@@ -91,6 +95,12 @@ class App extends React.Component {
                   </Route>
                   <Route path='/noAudioControl'>
                     <AudioControl/>
+                  </Route>
+                  <Route path='/insufficentContrast'>
+                    <ContrastMinimum/>
+                  </Route>
+                  <Route path='/resizeText'>
+                    <ResizeText/>
                   </Route>
                 </Switch>
               </div>
