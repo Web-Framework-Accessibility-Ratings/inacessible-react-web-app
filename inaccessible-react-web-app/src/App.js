@@ -11,6 +11,7 @@ import UseOfColor from './components/1.4.1UseOfColor';
 import AudioControl from './components/1.4.2AudioControl';
 import ContrastMinimum from './components/1.4.3Contrast(Minimum)';
 import ResizeText from './components/1.4.4ResizeText';
+import ImageOfText from './components/1.4.5ImageOfText';
 
 import {
   BrowserRouter as Router,
@@ -69,6 +70,7 @@ class App extends React.Component {
                 <Link style={linkStyle} to='/noAudioControl'>No Audio Control</Link><br/>
                 <Link style={linkStyle} to='/insufficentContrast'>Insufficent Contrast</Link><br/>
                 <Link style={linkStyle} to='/resizeText'>No Resizing Text</Link><br/>
+                <Link style={linkStyle} to='/imageOfText'>Image of Text</Link><br/>
               </div>
               <div id='inaccessibleContent' style={inaccessibleContentStyle}>
                 <Switch>
@@ -101,6 +103,9 @@ class App extends React.Component {
                   </Route>
                   <Route path='/resizeText'>
                     <ResizeText/>
+                  </Route>
+                  <Route path='/imageOfText'>
+                    <ImageOfText/>
                   </Route>
                 </Switch>
               </div>
