@@ -12,6 +12,9 @@ import AudioControl from './components/1.4.2AudioControl';
 import ContrastMinimum from './components/1.4.3Contrast(Minimum)';
 import ResizeText from './components/1.4.4ResizeText';
 import ImageOfText from './components/1.4.5ImageOfText';
+import ContrastEnhanced from './components/1.4.6Contrast(Enhanced)';
+import VisualPresentation from './components/1.4.8VisualPresentation'; 
+import NonTextContrast from './components/1.4.11NonTextContrast';
 
 import {
   BrowserRouter as Router,
@@ -71,6 +74,9 @@ class App extends React.Component {
                 <Link style={linkStyle} to='/insufficentContrast'>Insufficent Contrast</Link><br/>
                 <Link style={linkStyle} to='/resizeText'>No Resizing Text</Link><br/>
                 <Link style={linkStyle} to='/imageOfText'>Image of Text</Link><br/>
+                <Link style={linkStyle} to='/contrastEnhanced'>Enhanced Contrast</Link><br/>
+                <Link style={linkStyle} to='/visualPresentation'>Visual Presentation</Link><br/>
+                <Link style={linkStyle} to='/nonTextContrast'>Non Text Contrast</Link><br/>
               </div>
               <div id='inaccessibleContent' style={inaccessibleContentStyle}>
                 <Switch>
@@ -106,6 +112,15 @@ class App extends React.Component {
                   </Route>
                   <Route path='/imageOfText'>
                     <ImageOfText/>
+                  </Route>
+                  <Route path='/contrastEnhanced'>
+                    <ContrastEnhanced/>
+                  </Route>
+                  <Route path='/visualPresentation'>
+                    <VisualPresentation/>
+                  </Route>
+                  <Route path='/nonTextContrast'>
+                    <NonTextContrast/>
                   </Route>
                 </Switch>
               </div>
