@@ -15,6 +15,7 @@ import ImageOfText from './components/1.4.5ImageOfText';
 import ContrastEnhanced from './components/1.4.6Contrast(Enhanced)';
 import VisualPresentation from './components/1.4.8VisualPresentation'; 
 import NonTextContrast from './components/1.4.11NonTextContrast';
+import TextSpacing from './components/1.4.12TextSpacing';
 
 import {
   BrowserRouter as Router,
@@ -77,6 +78,7 @@ class App extends React.Component {
                 <Link style={linkStyle} to='/contrastEnhanced'>Enhanced Contrast</Link><br/>
                 <Link style={linkStyle} to='/visualPresentation'>Visual Presentation</Link><br/>
                 <Link style={linkStyle} to='/nonTextContrast'>Non Text Contrast</Link><br/>
+                <Link style={linkStyle} to='/textSpacing'>Text Spacing</Link><br/>
               </div>
               <div id='inaccessibleContent' style={inaccessibleContentStyle}>
                 <Switch>
@@ -121,6 +123,9 @@ class App extends React.Component {
                   </Route>
                   <Route path='/nonTextContrast'>
                     <NonTextContrast/>
+                  </Route>
+                  <Route path='/textSpacing'>
+                    <TextSpacing/>
                   </Route>
                 </Switch>
               </div>
