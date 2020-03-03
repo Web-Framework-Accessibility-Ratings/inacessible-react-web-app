@@ -7,7 +7,7 @@ const textColor = {
 function ContrastEnhanced() {
     return (
         <div>
-            <h1>Some inaccessible content without a role</h1>
+            <h1>Text which has a higher contrast requirement than before</h1>
             <p style={textColor}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Suspendisse posuere consectetur diam, laoreet vulputate lacus 

@@ -3,7 +3,10 @@ import logo from '../logo.svg';
 
 function ImageNoAlt() {
     return (
-        <img src={logo}/>
+        <div>
+            <h1>Image without alt text</h1>
+            <img src={logo}/>
+        </div>
     );
 }
 

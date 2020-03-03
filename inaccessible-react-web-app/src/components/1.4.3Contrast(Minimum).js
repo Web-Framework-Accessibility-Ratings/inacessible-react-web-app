@@ -7,7 +7,7 @@ const textColor = {
 function ContrastMinimum() {
     return (
         <div>
-            <h1>Some inaccessible content without a role</h1>
+            <h1>Text with low contrast to the background</h1>
             <p style={textColor}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Suspendisse posuere consectetur diam, laoreet vulputate lacus 

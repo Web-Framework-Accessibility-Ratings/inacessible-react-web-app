@@ -3,7 +3,10 @@ import text from '../imageOfText.png';
 
 function ImageOfText() {
     return (
-        <img src={text} alt={'Code used to create the TextAlternatives page'}/>
+        <div>
+            <h1>Image of some code used in this application</h1>
+            <img src={text} alt={'Code used to create the TextAlternatives page'}/>
+        </div>
     );
 }
 

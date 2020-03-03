@@ -3,6 +3,7 @@ import React from 'react';
 function ResizeText() {
     return (
         <div>
+            <h1>Two divs which overlap eachother due to content overflow</h1>
             <div style={{fontSize:'100%', width:120, height:100, border: 'thin solid gray'}}> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Suspendisse posuere consectetur diam, laoreet vulputate lacus 

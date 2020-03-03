@@ -7,7 +7,7 @@ const loseFocus = () => {
 function Keyboard() {
     return (
         <div>
-            <h1>Some inaccessible content without a role</h1>
+            <h1>An input that cannot be selected.</h1>
             <p>
                 <label>
                     Name

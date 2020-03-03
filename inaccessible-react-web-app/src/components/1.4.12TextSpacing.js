@@ -7,7 +7,7 @@ const textColor = {
 function TextSpacing() {
     return (
         <div>
-            <h1>Some inaccessible content without a role</h1>
+            <h1>Text that overlaps due to a &lt; 1 line height</h1>
             <p style={textColor}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Suspendisse posuere consectetur diam, laoreet vulputate lacus 

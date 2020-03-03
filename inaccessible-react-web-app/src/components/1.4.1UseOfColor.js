@@ -1,22 +1,14 @@
 import React from 'react';
 
 const styleWithLinks = {
-    color: 'white',
+    color: 'grey',
     textDecoration: 'none',
-    '&:hover': {
-        textDecoration: 'underline',
-        color: 'red'
-    },
-    '&:visited': {
-        textDecoration: 'none',
-        color: 'white'
-    }
 }
 
 function UseOfColor() {
     return (
         <div>
-            <h1>Some inaccessible content without a role</h1>
+            <h1>Link that blends in without color</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Suspendisse posuere consectetur diam, laoreet vulputate lacus 

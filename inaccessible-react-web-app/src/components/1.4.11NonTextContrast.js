@@ -9,7 +9,7 @@ const textColor = {
 function NonTextContrast() {
     return (
         <div>
-            <h1>Some inaccessible content without a role</h1>
+            <h1>Remove the ability to determine if a link is selected</h1>
             <p>
                 Lorem <a style={textColor} href="/">ipsum</a> dolor sit amet, consectetur adipiscing elit. 
                 Suspendisse posuere consectetur diam, laoreet vulputate lacus 
