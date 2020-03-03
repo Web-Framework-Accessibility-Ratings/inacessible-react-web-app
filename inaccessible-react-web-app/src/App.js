@@ -61,7 +61,7 @@ class App extends React.Component {
           <header className="App-header">
             <div id='container' style={containerStyle}>
               <div id='sidePanel' style={panelStyle}>
-                <img src={logo} className="App-logo" alt="logo" style={imageStyle} />
+                <img src={logo} className="App-logo" alt="React Logo" style={imageStyle} />
                 <hr/>
                 <Link style={linkStyle} to='/'>Home</Link><br/>
                 <Link style={linkStyle} to='/imageNoAlt'>Image without alt-text</Link><br/>
