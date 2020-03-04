@@ -17,7 +17,7 @@ function ShortCut() {
     
     return (
         <div id='shortcut'>
-            <h1>Press a to jump to name.</h1>
+            <h1>Press 'a' to jump to name.</h1>
             <p>
                 <label>
                     Name
