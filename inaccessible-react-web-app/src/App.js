@@ -17,6 +17,7 @@ import VisualPresentation from './components/1.4.8VisualPresentation';
 import NonTextContrast from './components/1.4.11NonTextContrast';
 import TextSpacing from './components/1.4.12TextSpacing';
 import Keyboard from './components/2.1.1Keyboard';
+import KeyboardTrap from './components/2.1.2KeyboardTrap';
 
 import {
   BrowserRouter as Router,
@@ -81,6 +82,7 @@ class App extends React.Component {
                 <Link style={linkStyle} to='/nonTextContrast'>Non Text Contrast</Link><br/>
                 <Link style={linkStyle} to='/textSpacing'>Text Spacing</Link><br/>
                 <Link style={linkStyle} to='/keyboard'>Keyboard</Link><br/>
+                <Link style={linkStyle} to='/keyboardTrap'>Keyboard Trap</Link><br/>
               </div>
               <div id='inaccessibleContent' style={inaccessibleContentStyle}>
                 <Switch>
@@ -131,6 +133,9 @@ class App extends React.Component {
                   </Route>
                   <Route path='/keyboard'>
                     <Keyboard/>
+                  </Route>
+                  <Route path='/keyboardTrap'>
+                    <KeyboardTrap/>
                   </Route>
                 </Switch>
               </div>
