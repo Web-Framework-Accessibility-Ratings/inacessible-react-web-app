@@ -15,9 +15,14 @@ const change = () => {
     document.getElementById("flashingBackground").style.background = color;
 }
 
+let background
+
 function TimeAdjustable() {
     useEffect(()=>{
-        setInterval(change, 4000)
+        background = setInterval(change, 4000)
+        return () => {
+            clearInterval(background)
+        }
     })
     return (
         <div>
