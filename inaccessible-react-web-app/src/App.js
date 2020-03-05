@@ -21,6 +21,7 @@ import KeyboardTrap from './components/2.1.2KeyboardTrap';
 import ShortCut from './components/2.1.4ShortCut';
 import TimeAdjustable from './components/2.2.1TimeAdjustable';
 import PauseStopHide from './components/2.2.2PauseStopHide';
+import ThreeFlashes from './components/2.3.1ThreeFlashes';
 
 import {
   BrowserRouter as Router,
@@ -89,6 +90,7 @@ class App extends React.Component {
                 <Link style={linkStyle} to='/shortcut'>Shortcut</Link><br/>
                 <Link style={linkStyle} to='/timeAdjustable'>Time Adjustable</Link><br/>
                 <Link style={linkStyle} to='/pauseStopHide'>Pause Stop Hide</Link><br/>
+                <Link style={linkStyle} to='/threeFlashes'>Three Flashes</Link><br/>
               </div>
               <div id='inaccessibleContent' style={inaccessibleContentStyle}>
                 <Switch>
@@ -152,6 +154,10 @@ class App extends React.Component {
                   <Route path='/pauseStopHide'>
                     <PauseStopHide/>
                   </Route>
+                  <Route path='/threeFlashes'>
+                    <ThreeFlashes/>
+                  </Route>
+
                 </Switch>
               </div>
             </div>
