@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 let x;
+let background;
 
 const change = () => {
     let color;
@@ -14,8 +15,6 @@ const change = () => {
 
     document.getElementById("flashingBackground").style.background = color;
 }
-
-let background
 
 function TimeAdjustable() {
     useEffect(()=>{
