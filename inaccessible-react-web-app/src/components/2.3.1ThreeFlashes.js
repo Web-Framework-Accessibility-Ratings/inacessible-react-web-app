@@ -7,7 +7,7 @@ let counter = 10;
 const change = () => {
     let color;
     if (x === 1 && counter > 0) {
-        color = "red";
+        color = "#9E0000";
         x = 2;
         counter--;
     } else {

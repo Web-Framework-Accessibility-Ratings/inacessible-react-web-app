@@ -6,7 +6,7 @@ let background;
 const change = () => {
     let color;
     if (x === 1) {
-        color = "red";
+        color = "#9E0000";
         x = 2;
     } else {
         color = "green";
